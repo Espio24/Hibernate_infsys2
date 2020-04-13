@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="hibernate.SystemUnderTestEntity" table="system_under_test" schema="system_manager">
+        <id name="idSystemUnderTest">
+            <column name="id_system_under_test" sql-type="int(11)"/>
+        </id>
+        <property name="nameSystem">
+            <column name="name_system" sql-type="varchar(45)" length="45"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="hibernate.TesterEntity" table="tester" schema="system_manager">
+        <id name="idTester">
+            <column name="id_tester" sql-type="int(11)"/>
+        </id>
+        <property name="nameTester">
+            <column name="name_tester" sql-type="varchar(45)" length="45"/>
+        </property>
+    </class>
+</hibernate-mapping>
