@@ -19,7 +19,7 @@ public class ResultsEntity {
         this.idResults = idResults;
     }
 
-    @Basic
+    @Temporal(TemporalType.DATE)
     @Column(name = "date", nullable = false)
     public Date getDate() {
         return date;
