@@ -16,6 +16,7 @@ public class HibernateSessionFactory {
                 .build();
         try{
             sessionFactory = new MetadataSources( registry ).buildMetadata().buildSessionFactory();
+            System.out.println("Создание сессии");
         }
         catch (Exception e) {
 
